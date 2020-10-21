@@ -1,0 +1,25 @@
+package abc.comp.com;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+
+public class Main extends Activity 
+{
+	String msg="android:";
+	
+    /** Called when the activity is first created. */
+    @Override
+    
+        public void onCreate(Bundle savedInstanceState) 
+        {
+        	super.onCreate(savedInstanceState);
+        	setContentView(R.layout.main);
+        	Log.d(msg,"create()");
+        }
+        protected void onStart()
+        {
+        	super.onStart();
+        	Log.d(msg,"onStart()");
+        }
+ }
